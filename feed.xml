@@ -3,13 +3,8 @@
  
 <channel>
   <title>Erik's Github</title>
-  <link>https://github.com/huangti-1762083/huangti-1762083.github.io</link>
+  <link>https://github.com/huangti-1762083/huangti-1762083.github.io/embeddingOriginalWork.html</link>
   <description>INFO101 stuff</description>
-  <item>
-	<title>Erik's Original Work</title>
- 	<link>https://github.com/huangti-1762083/huangti-1762083.github.io/blob/master/embeddingOriginalWork.html</link>
- 	<description>INFO101 embedded example</description>
-  </item>
 </channel>
  
 </rss>
