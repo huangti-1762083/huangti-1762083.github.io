@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UW Application</title>
+</head>
+<body>
+
+<h2>UW Application</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+		<legend>Your UW Account</legend>
+		<div class="field">
+			<label>Email:</label>
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label>
+			<input type="password" name="pwd">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label>
+			<input type="password" name="pwd_r">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>First name: </label>
+      <input type="text" name="firstname"><br>
+      <label>Last name: </label>
+      <input type="text" name="lastname">
+		</div>
+		<div class="field">
+			<label>Sex:</label><br>
+      <input type="radio" name="sex_f" value="female"> Female<br>
+      <input type="radio" name="sex_m" value="male"> Male<br>
+      <input type="radio" name="sex_o" value="other"> Other
+		</div>
+		<div class="field">
+			<label>City:</label>
+			<input type="text" name="city">
+		</div>
+		<div class="field">
+			<label>State:</label>
+			<select name="state">
+				<option value="" selected="true">Choose a State</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</select>
+		</div>
+		<div class="field">
+			<label>ZIP:</label>
+			<input type="text" name="zip">
+		</div>
+    <div class="field">
+			<label>Do you need finanical aid?</label> <br>
+      <input type="radio" name="need_finanical_aid_y" value="yes"> Yes<br>
+      <input type="radio" name="need_finanical_aid_n" value="no"> No
+		</div>
+  </fieldset>
+
+	<fieldset>
+		<legend>Grade</legend>
+		<div class="field">
+			<label>Is your GPA higher than 4.0?</label>
+			<input type="radio" name="gpa_greater_than_4_y" value="yes">Yes
+			<input type="radio" name="gpa_greater_than_4_n" value="no">No
+		</div>
+		<div class="field">
+			<label>What type of major are you seeking? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="major_art" value="art">Art</li>
+        <li><input type="checkbox" name="major_cse" value="cse">CSE</li>
+				<li><input type="checkbox" name="major_math" value="math">Math</li>
+				<li><input type="checkbox" name="non_major" value="non-major">Non-major (Choose this if you answered no to previous question)</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>GPA for Courses</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>English</th>
+					<th>Calculus</th>
+					<th>History</th>
+					<th>Chemistry</th>
+					<th>Physics</th>
+					<th>Dance</th>
+					<th>Computer Science</th>
+				</tr>
+				<tr>
+					<th>Your GPA</th>
+					<td><input type="gpa" size="5" name="gpa_eng"></td>
+					<td><input type="gpa" size="5" name="gpa_cal"></td>
+					<td><input type="gpa" size="5" name="gpa_his"></td>
+					<td><input type="gpa" size="5" name="gpa_chm"></td>
+					<td><input type="gpa" size="5" name="gpa_phy"></td>
+					<td><input type="gpa" size="5" name="gpa_dan"></td>
+					<td><input type="gpa" size="5" name="gpa_cs"></td>
+				</tr>
+			</table>
+		</div><br>
+    <div class="field">
+      <label>Please confirm that you've sent the following documents</label> <br>
+      <input type="checkbox" name="transcripts" value="sent">Transcript<br>
+      <input type="checkbox" name="test_scores" value="sent">SAT/ACT scores<br>
+      <input type="checkbox" name="fee_waiver" value="sent">Fee Waiver Form<br>
+    </div><br>
+    <div class="field">
+      <label>Which campus do you go to?</label> <br>
+      <select name="campus_choice"> <option value="seattle">Seattle</option> <option value="bothell">Bothell</option> <option value="tacoma">Tacoma</option> </select>
+      </div>
+  	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>At the UW, we consider the college essay as our opportunity to see the person behind the transcripts and the numbers.</label><br>
+			<label>	Some of the best statements are written as personal stories. In general, concise, straightforward writing is best and good essays are often 300-400 words in length.</label><br>
+			<textarea name="personal_statement" rows="30" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Short response:</label><br>
+			<label>Our families and communities often define us and our individual worlds. Community might refer to your cultural group,</label><br>
+			<label>extended family, religious group, neighborhood or school, sports team or club, co-workers, etc. Describe the world you</label><br>
+			<label>come from and how you, as a product of it, might add to the diversity of the UW.</label><br>
+			<textarea name="response" rows="20" cols="60"></textarea>
+		</div>
+    <div class="field">
+			<label>Additional information about yourself or your circumstances</label><br>
+			<textarea name="skill_list" rows="20" cols="60">Blah blah blah...</textarea>
+		</div>
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+
+</form>
+</body>
+</html>
